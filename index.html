@@ -1,31 +1,17 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>E-Learning UI</title>
+  <meta charset="UTF-8">
+  <title>Interactive Quiz</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>LearnHub</h1>
-    <nav>
-      <a href="#courses">Courses</a>
-      <a href="#progress">Progress</a>
-    </nav>
-  </header>
-  <main>
-    <section id="courses">
-      <h2>Available Courses</h2>
-      <div class="course-card">JavaScript Basics</div>
-      <div class="course-card">React for Beginners</div>
-    </section>
-    <section id="progress">
-      <h2>Your Progress</h2>
-      <p>JavaScript Basics: 50%</p>
-    </section>
-    <section>
-      <h2>Course Video</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dGcsHMXbSOA" frameborder="0" allowfullscreen></iframe>
-    </section>
-  </main>
+  <div class="quiz-container">
+    <h1>General Knowledge Quiz</h1>
+    <div id="question"></div>
+    <div id="answers"></div>
+    <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    <div id="score">Score: 0</div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
